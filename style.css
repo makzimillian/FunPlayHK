@@ -53,7 +53,7 @@ body {
     /*color: red;*/
     opacity: 0.7;
     position: relative;
-    right: 10px;
+    right: 5px;
     transition: ease-in all 300ms;
     -moz- transition: ease-in all 300ms;
     -webkit- transition: ease-in all 300ms;
@@ -85,38 +85,38 @@ body {
 #intro {
   width: 100%;
   height: 100px;
-  background-color: #ccc;
+  background-color: #000;
 }
   #intro p {
     font-family: razing;
     font-size: 18px;
-    color: #000;
+    color: #fff;
   }
 
 
 #contentleft{
-  width: 50%;
-  height: 400px;
+  width: 35%;
   background-color: #333;
   float: left;
 }
   #contentleft h2 {
     font-family: razing;
     font-size: 34px;
-    color: #000;
+    color: #fff;
+    padding-bottom: 15px;
   }
 
   #contentleft h3 {
     font-family: razing;
-    font-size: 28px;
-    color: #000;
+    font-size: 22px;
+    color: #fff;
 
   }
 
   #contentleft .spottext {
     font-family: razing;
     font-size: 16px;
-    color: #000;
+    color: #EBEAEA;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -124,16 +124,39 @@ body {
   #contentleft .spottime {
     font-family: razing;
     font-size: 14px;
-    color: #000;
+    color: #EBEAEA;
     font-weight: 600;
+    padding-bottom: 15px;
   }
-#contentright {
-  width: 50%;
-  height: 400px;
-  background-color: #666;
-  float: right;
 
+#contentright {
+  width: 65%;
+  height: 343px;
+  background-color: #fff;
+  float: right;
 }
+  .gallerybox {
+    width: 210px;
+    height: 150px;
+    float: left;
+  }
+    .gallerymargin1 {
+      margin-right: 10px;
+    }
+    .gallerymargin2 {
+      margin-top: 10px;
+    }
+  .gallery{
+    background-color: #000;
+    height: 130px;
+    width: 100%;
+  }
+  .gallerybox p {
+    font-size: 18px;
+    font-family: razing;
+    color: #000;
+    padding-top: 8px;
+  }
 
 #footer{
   clear: both;
