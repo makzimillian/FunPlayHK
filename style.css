@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    font-weight: 100
+
+}
+
+body {
+  background-image: url(images/EGYPT-C-PATTERN.png);
+}
+
+@font-face {
+  font-family: razing;
+  src: url(fonts/Razing.ttf);
+
+}
+
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+
+
+}
+
+#nav{
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+
+}
+
+    #nav ul {
+      padding-top: 10px;
+      float: right;
+
+  }
+
+    #nav ul li {
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: razing;
+    transition: ease-in all 300ms;
+    -moz- transition: ease-in all 300ms;
+    -webkit- transition: ease-in all 300ms;
+    -o- transition: ease-in all 300ms;
+
+  }
+
+   #nav ul li:hover{
+    /*font-size: 30px*/
+    /*color: red;*/
+    opacity: 0.7;
+    position: relative;
+    right: 10px;
+    transition: ease-in all 300ms;
+    -moz- transition: ease-in all 300ms;
+    -webkit- transition: ease-in all 300ms;
+    -o- transition: ease-in all 300ms;
+
+
+
+  }
+
+    #nav ul a {
+
+  }
+
+#header{
+  width: 100%;
+  height: 180px;
+  position: none;
+
+}
+
+  .logo {
+    width: 188px;
+    height: 187px;
+    background-image: url(images/funplayhk4.png);
+    margin: auto;
+    position: 50px;
+  }
+
+#intro {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+}
+  #intro p {
+    font-family: razing;
+    font-size: 18px;
+    color: #000;
+  }
+
+
+#contentleft{
+  width: 50%;
+  height: 400px;
+  background-color: #333;
+  float: left;
+}
+  #contentleft h2 {
+    font-family: razing;
+    font-size: 34px;
+    color: #000;
+  }
+
+  #contentleft h3 {
+    font-family: razing;
+    font-size: 28px;
+    color: #000;
+
+  }
+
+  #contentleft .spottext {
+    font-family: razing;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #contentleft .spottime {
+    font-family: razing;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+  }
+#contentright {
+  width: 50%;
+  height: 400px;
+  background-color: #666;
+  float: right;
+
+}
+
+#footer{
+  clear: both;
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+
+}
+
