@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="996" measuredH="565" mockupW="576" mockupH="565">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1188" measuredH="565" mockupW="768" mockupH="565">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="420" y="0" w="576" h="565" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -46,6 +46,16 @@
     <control controlID="11" controlTypeID="com.balsamiq.mockups::iPadPopover" x="635" y="332" w="239" h="194" measuredW="222" measuredH="187" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>%20%0AWizard%20Wong%27s%20Lost%20Arcade%0ALast%20Updated%20by%20Jenkins%20Karl%20on%20Dec%209%2C%202012%0AFor%20my%20money%2C%20the%20best%20feature%20of%20Wizard%20Wong%27s%20Lost%20Arcade%20is%20the%20multi-player%203D%20Time%20Crisis.%20Old%20classics%20can%20be%20fond%20here%20suchas%20air%20hockey%20and%20pacman.%0ADirections%20Save%20to%20map%20Website</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Arrow" x="960" y="170" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::StickyNote" x="1079" y="261" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Or%20list%20by%20activity%3F%21%3F</text>
       </controlProperties>
     </control>
   </controls>

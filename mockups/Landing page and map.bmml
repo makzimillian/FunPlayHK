@@ -5,8 +5,9 @@
         <text>FunPlayHK%0Ahttp%3A//funplayHK.com.hk</text>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::SearchBox" x="566" y="135" w="190" h="-1" measuredW="142" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::SearchBox" x="445" y="142" w="270" h="-1" measuredW="186" measuredH="30" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
+        <size>18</size>
         <text>%20%20%20%20%20%20%20search%20location</text>
       </controlProperties>
     </control>
@@ -26,18 +27,18 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Webcam" x="869" y="75" w="28" h="26" measuredW="177" measuredH="146" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="709" y="75" w="-1" h="-1" measuredW="76" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Webcam" x="1174" y="75" w="28" h="26" measuredW="177" measuredH="146" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="1026" y="74" w="-1" h="-1" measuredW="76" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Username</text>
       </controlProperties>
     </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::TextInput" x="792" y="75" w="-1" h="-1" measuredW="70" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::TextInput" x="1103" y="75" w="-1" h="-1" measuredW="70" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Password</text>
       </controlProperties>
     </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::ComboBox" x="612" y="161" w="-1" h="-1" measuredW="98" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::ComboBox" x="1061" y="145" w="-1" h="-1" measuredW="98" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Scroll%20down</text>
       </controlProperties>

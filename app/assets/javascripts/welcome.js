@@ -3,6 +3,7 @@
 // The user can then click an option to hide, show or delete the markers.
 var map;
 var markers = [];
+var infoWindow = [];
 
 function initialize() {
   // initialize the map centered on HK
@@ -26,7 +27,14 @@ function initialize() {
       // TODO: ADD AN INFO WINDOW WHEN THAT MARKER IS CLICKED
       // activity.name
       // activity.description
+      // make an infowindow
+      var infoWindow = new google.maps.InfoWindow({
+        content: (activity.category, activity.location, activity.description)
+      });
 
+      google.maps.event.addListener(newMarker, 'click', function() {
+        infoWindow.open(map, newMarker);
+      });
     });
   });
 }
