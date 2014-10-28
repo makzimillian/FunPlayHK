@@ -5,8 +5,8 @@ var map;
 var markers = [];
 
 function initialize() {
+  // initialize the map centered on HK
   var hongKong = new google.maps.LatLng(22.288976, 114.171731);
-
   var mapOptions = {
     zoom: 12,
     center: hongKong,
@@ -15,18 +15,21 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
-  addMarker(hongKong);
+  // make an ajax request to /activites.json and add the result to the map
+  $.get('/activities.json').done(function(activitiesData) {
+    // for each activity in the activities table...
+    activitiesData.forEach(function(activity) {
 
-  addMarker(new google.maps.LatLng(22.275251,114.186776));
-  addMarker(new google.maps.LatLng(22.337409,114.187459));
+      // ...make a map marker
+      var newMarker = addMarker(new google.maps.LatLng(activity.latitude, activity.longitude));
 
-  // This event listener will call addMarker() when the map is clicked.
-  google.maps.event.addListener(map, 'click', function(event) {
-    // addMarker(event.latLng);
+      // TODO: ADD AN INFO WINDOW WHEN THAT MARKER IS CLICKED
+      // activity.name
+      // activity.description
+
+    });
   });
 }
-
-
 
 // Add a marker to the map and push to the array.
 function addMarker(location) {
@@ -35,24 +38,7 @@ function addMarker(location) {
     map: map
   });
   markers.push(marker);
+  return marker;
 }
-
-// // Sets the map on all markers in the array.
-// function setAllMap(map) {
-//   for (var i = 0; i < markers.length; i++) {
-//     markers[i].setMap(map);
-//   }
-// }
-
-// // Removes the markers from the map, but keeps them in the array.
-// function clearMarkers() {
-//   setAllMap(null);
-// }
-
-// // Shows any markers currently in the array.
-// function showMarkers() {
-//   setAllMap(map);
-// }
-
 
 google.maps.event.addDomListener(window, 'load', initialize);
