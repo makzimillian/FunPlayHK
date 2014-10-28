@@ -2,13 +2,27 @@
 <html>
 <head>
   <title>FunPlayHK</title>
+  <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="nav">
+   <div id="wrapper">
+    <ul>
+      <a href="/"><li>Home</li></a>
+      <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+      <a href="portfolio.html"><li>Login</li></a>
+      <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+      <a href="contact.hmtl"><li>Contact</li></a>
+    </ul>
+   </div>
+  </div>
 
 <%= yield %>
 
+<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
+<%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

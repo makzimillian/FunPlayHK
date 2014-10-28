@@ -4,8 +4,11 @@ class CreateActivities < ActiveRecord::Migration
       t.string :name
       t.string :category
       t.string :location
-      t.string :comments
+      t.float :latitude
+      t.float :longitude
+      t.string :description
       t.integer :rating
+      t.string :url
 
       t.timestamps
     end

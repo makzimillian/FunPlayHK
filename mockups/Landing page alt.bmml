@@ -32,9 +32,10 @@
         <text>Password</text>
       </controlProperties>
     </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::ComboBox" x="623" y="142" w="170" h="-1" measuredW="98" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::ComboBox" x="811" y="147" w="170" h="-1" measuredW="137" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Scroll%20down</text>
+        <size>16</size>
+        <text>Causeway%20Bay</text>
       </controlProperties>
     </control>
     <control controlID="10" controlTypeID="com.balsamiq.mockups::Title" x="426" y="78" w="-1" h="-1" measuredW="209" measuredH="43" zOrder="9" locked="false" isInGroup="-1">

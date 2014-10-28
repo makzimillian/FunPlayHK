@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024103452) do
+ActiveRecord::Schema.define(version: 20141027121056) do
 
   create_table "activities", force: true do |t|
     t.string   "name"
     t.string   "category"
     t.string   "location"
-    t.string   "comments"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "description"
     t.integer  "rating"
+    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

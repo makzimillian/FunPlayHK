@@ -16,13 +16,28 @@
 </p>
 
 <p>
-  <strong>Comments:</strong>
-  <%= @activity.comments %>
+  <strong>Latitude:</strong>
+  <%= @activity.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @activity.longitude %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activity.description %>
 </p>
 
 <p>
   <strong>Rating:</strong>
   <%= @activity.rating %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @activity.url %>
 </p>
 
 <%= link_to 'Edit', edit_activity_path(@activity) %> |

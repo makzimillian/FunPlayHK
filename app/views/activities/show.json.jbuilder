@@ -1,1 +1,1 @@
-json.extract! @activity, :id, :name, :category, :location, :comments, :rating, :created_at, :updated_at
+json.extract! @activity, :id, :name, :category, :location, :latitude, :longitude, :description, :rating, :url, :created_at, :updated_at

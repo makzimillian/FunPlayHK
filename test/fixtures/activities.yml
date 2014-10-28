@@ -4,12 +4,18 @@ one:
   name: MyString
   category: MyString
   location: MyString
-  comments: MyString
+  latitude: 1.5
+  longitude: 1.5
+  description: MyString
   rating: 1
+  url: MyString
 
 two:
   name: MyString
   category: MyString
   location: MyString
-  comments: MyString
+  latitude: 1.5
+  longitude: 1.5
+  description: MyString
   rating: 1
+  url: MyString
