@@ -3,32 +3,44 @@
 <head>
   <title>FunPlayHK</title>
   <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" %>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div id="nav">
-   <div id="wrapper">
-    <ul>
-      <a href="/"><li>Home</li></a>
-      <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-      <a href="portfolio.html"><li>Login</li></a>
-      <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-      <a href="contact.hmtl"><li>Contact</li></a>
-    </ul>
-  <div id="logo">
-    <a href="/"><h1>Fun/Play-HK</h1>
-    </a>
+    <div id="wrapper">
+      <ul>
+        <a href="/users/edit"><li>Profile</li></a>
+
+        <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+
+        <a href="/contact"><li>Contact</li></a>
+
+        <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+
+        <% if user_signed_in? %>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Login", new_user_session_path %></li>
+        <% end %>
+
+        <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+
+        </ul>
+
+      <div id="logo">
+        <a href="/"><h1>Fun/Play-HK</h1></a>
+      </div>
     </div>
   </div>
-</div>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
-<%= yield %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
-<%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
-<%= javascript_include_tag 'application' %>
+  <%= yield %>
+
+  <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
+  <%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
+  <%= javascript_include_tag 'application' %>
 </body>
 </html>
