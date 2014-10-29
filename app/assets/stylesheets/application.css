@@ -29,14 +29,14 @@ body {
 
 }
 
-#marker-tooltip {
+/*#marker-tooltip {
   display: none;
   position: absolute;
-  width: 300px;
+  width: 500px;
   height: 200px;
   background-color: #ccc;
   margin: 15px;
-}
+}*/
 
 
 #wrapper {
