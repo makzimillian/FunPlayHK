@@ -111,11 +111,9 @@ body {
               color: red;
               transition: ease-in all 300ms;
               -moz-transition: ease-in all 300ms;
-              -webkit-transition: ease-in all 300ms;
               -o-transition: ease-in all 300ms;
 
             }
-
 #header{
   width: 100%;
   position: none;
@@ -137,4 +135,19 @@ body {
 #page-header{
 
 }
+
+.map-info-box {
+  width: 300px;
+}
+
+.activity-name {
+  color: blue;
+}
+
+.activity-images {
+  max-height: 50px;
+  max-width: 50px;
+  float: right;
+}
+
 

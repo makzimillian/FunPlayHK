@@ -29,7 +29,7 @@ function initialize() {
       // activity.description
       // make an infowindow
       var infoWindow = new google.maps.InfoWindow({
-        content: "<strong>" + activity.category + "</strong> " + activity.location + " " + activity.description
+        content: makeInfoBoxForActivity(activity)
       });
 
       google.maps.event.addListener(newMarker, 'click', function() {
@@ -50,3 +50,18 @@ function addMarker(location) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+function makeInfoBoxForActivity(activity) {
+  return '<div class="map-info-box">' +
+      '<a href="/activities/' + activity.id + '"><strong>' + activity.category + '</strong></a>' +
+      "<br>" +
+      '<img src="/assets/darts.jpg" class="activity-images">' +
+      "<br>" +
+      activity.location +
+      "<br>" +
+      activity.description +
+      "<br><br>" +
+      "Submitted by <em>" + activity.name + "</em>" + activity.datetime +
+
+    "</div>"
+}
