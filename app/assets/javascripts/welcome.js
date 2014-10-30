@@ -29,7 +29,7 @@ function initialize() {
       // activity.description
       // make an infowindow
       var infoWindow = new google.maps.InfoWindow({
-        content: (activity.category, activity.location, activity.description)
+        content: "<strong>" + activity.category + "</strong> " + activity.location + " " + activity.description
       });
 
       google.maps.event.addListener(newMarker, 'click', function() {
