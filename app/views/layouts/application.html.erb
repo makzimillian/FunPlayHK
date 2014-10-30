@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
   <title>FunPlayHK</title>
@@ -6,6 +6,7 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
   <div id="nav">
     <div id="wrapper">
@@ -32,11 +33,39 @@
       </div>
     </div>
   </div>
+  <div id="wrapper">
+    <a href="/activities/new"><img src="/assets/plus.png" class="plus"></a>
+  </div>
+  <div>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <div id="activites_list">
+   <ul>
+    <a href="/"><li>Arcade</li></a>
 
-  <%= yield %>
+    <li><HR WIDTH="60%"></li>
+
+
+
+
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+      <% if notice %>
+        <div class="alert alert-success" role="alert">
+           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <%= notice %>
+        </div>
+      <% end %>
+
+      <% if alert %>
+        <div class="alert alert-danger" role="alert">
+           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <%= alert %>
+        </div>
+      <% end %>
+
+      <%= yield %>
+    </div>
+  </div>
 
   <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
   <%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>

@@ -53,15 +53,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 function makeInfoBoxForActivity(activity) {
   return '<div class="map-info-box">' +
-      '<a href="/activities/' + activity.id + '"><strong>' + activity.category + '</strong></a>' +
+      '<a href="/activities/' + activity.id + '"><strong>' + activity.category.name + '</strong></a>' +
       "<br>" +
-      '<img src="/assets/darts.jpg" class="activity-images">' +
+      '<img src="/assets/' + activity.category.image + '" class="activity-images">' +
       "<br>" +
       activity.location +
       "<br>" +
+      "<br>" +
       activity.description +
       "<br><br>" +
-      "Submitted by <em>" + activity.name + "</em>" + activity.datetime +
+      "Submitted by <em>" + activity.name + "</em>" +
 
     "</div>"
 }
