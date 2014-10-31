@@ -5,6 +5,11 @@ var map;
 var markers = [];
 var infoWindow = [];
 
+$('a').click(function(){
+  console.log($(this).data("category"));
+  var category = $(this).data("category");
+});
+
 function initialize() {
   // initialize the map centered on HK
   var hongKong = new google.maps.LatLng(22.288976, 114.171731);
@@ -17,10 +22,10 @@ function initialize() {
       mapOptions);
 
   // make an ajax request to /activites.json and add the result to the map
-  $.get('/activities.json').done(function(activitiesData) {
+  $.get('/activities.json?type=').done(function(activitiesData) {
     // for each activity in the activities table...
+    console.log("activities data", activitiesData);
     activitiesData.forEach(function(activity) {
-
       // ...make a map marker
       var newMarker = addMarker(new google.maps.LatLng(activity.latitude, activity.longitude));
 

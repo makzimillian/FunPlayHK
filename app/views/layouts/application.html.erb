@@ -3,7 +3,7 @@
 <head>
   <title>FunPlayHK</title>
   <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" %>
-  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 
@@ -34,20 +34,13 @@
     </div>
   </div>
   <div id="wrapper">
-    <a href="/activities/new"><img src="/assets/plus.png" class="plus"></a>
+    <div id="add_link">
+      <a href="/activities/new"><img src="/assets/plus.png" class="plus"><--- Don't be sad... Click to Add!</a>
+    </div>
   </div>
+
   <div>
-
-  <div id="activites_list">
-   <ul>
-    <a href="/"><li>Arcade</li></a>
-
-    <li><HR WIDTH="60%"></li>
-
-
-
-
-  <div class="row">
+    <div class="row">
     <div class="col-md-10 col-md-offset-1 col-sm-12">
       <% if notice %>
         <div class="alert alert-success" role="alert">
@@ -63,9 +56,69 @@
         </div>
       <% end %>
 
-      <%= yield %>
+
     </div>
   </div>
+
+
+  <div class="row">
+    <div >
+      <div id="activities_list" class="col-md-2">
+       <ul>
+        <a data-category="Arcade" href="#"><li>Arcade</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a data-category="Archery" href="#"><li>Archery</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a data-category="Beer-Pong" href="/"><li>Beer-Pong</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a data-category="Billiards" href="/"><li>Billiards</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a data-category="Boules" href="/"><li>Boules</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a data-category="Bowling" href="/"><li>Bowling</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Darts</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Driving Simulator</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Habour Cruise</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Ice-Skating</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Indoor Baseball</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Indoor Ski/Snowboard</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Surfing</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+
+        <a href="/"><li>Wakeboarding</li></a>
+        <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
+      </ul>
+    </div>
+
+
+
+
+  <div class="col-md-10">
+    <%= yield %>
+  </div>
+
+  </div>
+</div>
+
 
   <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
   <%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
