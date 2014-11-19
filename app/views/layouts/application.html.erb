@@ -6,7 +6,6 @@
   <%= stylesheet_link_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-
 <body>
   <div id="nav">
     <div id="wrapper">
@@ -55,11 +54,8 @@
           <%= alert %>
         </div>
       <% end %>
-
-
     </div>
   </div>
-
 
   <div class="row">
     <div >
@@ -108,18 +104,11 @@
         <hr style="height:2px;width:75%;border:none;color:#333;background-color:#333;" />
       </ul>
     </div>
-
-
-
-
   <div class="col-md-10">
     <%= yield %>
   </div>
-
   </div>
 </div>
-
-
   <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
   <%= javascript_include_tag "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
   <%= javascript_include_tag 'application' %>

@@ -14,7 +14,7 @@ function initialize() {
   // initialize the map centered on HK
   var hongKong = new google.maps.LatLng(22.288976, 114.171731);
   var mapOptions = {
-    zoom: 12,
+    zoom: 11,
     center: hongKong,
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
